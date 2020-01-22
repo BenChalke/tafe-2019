@@ -1,0 +1,5 @@
+[08-Dec-2019 02:37:46 Australia/Sydney] PHP Fatal error:  Uncaught Error: Cannot use object of type CartItem as array in /home/hw75g3vt1o8w/tafe.benchalke.com/checkout.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/hw75g3vt1o8w/tafe.benchalke.com/checkout.php on line 71
+[08-Dec-2019 02:40:28 Australia/Sydney] PHP Notice:  Undefined variable: valueFinalPrice in /home/hw75g3vt1o8w/tafe.benchalke.com/checkout.php on line 73

@@ -1,0 +1,128 @@
+/**** All Generic Styles ****/
+
+html {
+    font-size: 62.5%;   /* 1rem unit is now 62.5% of 16px (browser default) = 10px */
+    position: relative;
+    height: 100%;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: $black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6em;
+    position: relative;
+    height: 100%;
+}
+
+.clearFix:after {
+    display: block;
+    content: " ";
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none!important;
+    cursor: pointer;
+    outline: none!important;
+
+    :hover {
+        color: inherit;
+    }
+}
+
+.img-responsive {
+    max-width: 100%;
+    display: block;
+    height:auto;
+}
+
+div {
+    position: relative;
+
+    &::before {
+        display: table;
+        content: " ";
+    }
+
+    &::after {
+        display: table;
+        content: " ";
+    }
+}
+
+.container, .container-fluid, .container-large, .container-medium{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+
+    @media screen and (max-width: 830px) {
+        padding: 0;
+    }
+}
+
+
+.container-large {
+    width: 1670px;
+    @media screen and (max-width: 1500px) {
+        width: 1170px;
+    }
+}
+
+.container-medium {
+    width: 1300px;
+}
+
+.container {
+    width: 1170px;
+}
+
+//rest list formatting
+@mixin list-reset {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+//flexbox declaration
+@mixin getFlexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+//flexbox items values
+@mixin flex($values) {
+    -webkit-box-flex: $values;
+    -moz-box-flex:  $values;
+    -webkit-flex:  $values;
+    -ms-flex:  $values;
+    flex:  $values;
+}
+
+.flexbox {
+    @include getFlexbox;
+    flex-flow: row wrap; //shorthand for flex-direction and flex-wrap
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.error{
+    color: red;
+    margin: 10px 0;
+}
+

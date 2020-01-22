@@ -1,0 +1,169 @@
+div#contact-page{
+
+    div#contact-page-title {
+        text-align: center;
+
+         h1{
+             color: $colour2;
+             font-size: 4rem;
+             font-weight: 400;
+             padding: 10px 50px;
+             display: inline-block;
+             margin: 20px;
+
+             @media screen and (max-width: 365px){
+                 font-size: 3rem;
+             }
+
+         }
+     }
+
+    div#contact-page-content{
+        padding: 40px 20px;
+        align-items: stretch;
+
+        @media screen and (max-width: 450px){
+            padding: 0;
+        }
+
+        .contact-page-item{
+            @include flex(1 1 400px);
+
+            @media screen and (max-width: 853px){
+                @include flex(1 1 500px);
+
+            }
+        }
+
+        div#contact-page-contact-info{
+            text-align: center;
+            padding: 0 20px;
+
+            @media screen and (max-width: 853px){
+                padding-top: 30px;
+            }
+
+            div#contact-info{
+
+
+                div.contact-info-item{
+                    flex: 1 1 300px;
+                }
+
+                p{
+                    font-weight: bold;
+                }
+            }
+
+            #contact-facebook{
+                color: $colour1;
+                font-size: 3rem;
+            }
+
+            svg{
+                color: $colour1;
+                font-size: 3rem;
+            }
+        }
+
+        div#contact-page-contact-form{
+            padding: 20px;
+            background-color: $white;
+            color: black;
+            border-right: 2px solid $colour1;
+
+            @media screen and (max-width: 853px){
+                border-right: none;
+
+            }
+
+            form{
+                padding: 0 30px;
+
+                //Form stuff
+
+                input, select, textarea, button {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    background: none;
+                }
+
+                input, select, button {
+                    height: 35px;
+                }
+
+                .url {
+                    display: none;
+                }
+
+                input {
+                    padding-left: 15px;
+
+                    &::placeholder {
+                        color: #b2b2b2;
+                    }
+                }
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+
+                textarea {
+                    resize: none;
+                    padding: 5px;
+                    font-size: 1.1rem;
+                    border-style:solid;
+                }
+
+                div.check-box {
+                    margin-bottom: 10px;
+
+                    input[type='checkbox'] {
+                        display: inline-block;
+                        width: 20px;
+                        vertical-align: middle;
+                        margin: 0 5px 0 0;
+                    }
+
+                    label {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-bottom: 0;
+                    }
+                }
+
+                label{
+                    padding-bottom: 5px;
+
+                }
+
+                input, textarea, button {
+                    border: 1px solid $colour1;
+                    outline: none;
+                    background: none;
+
+                    &::placeholder{
+                        color: #b2b2b2;
+                        text-transform: capitalize;
+                        font-style: italic;
+                    }
+                }
+
+                button{
+                    background: none;
+                    display: inline-block;
+                    color: gray;
+                    font-weight: bold;
+                    max-width: 200px;
+
+                    @media screen and(max-width: 958px){
+                        width: 100%;
+                        max-width: none;
+                    }
+                }
+            }
+        }
+    }
+}

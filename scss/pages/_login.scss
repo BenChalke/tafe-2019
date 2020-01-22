@@ -1,0 +1,107 @@
+div#admin-login-page{
+    text-align: center;
+
+    div#admin-login-form{
+        max-width: 700px;
+        margin: 100px auto;
+        border: 1px solid $colour2;
+
+        div#admin-login-title{
+            background-color: $colour2;
+            color: $white;
+            
+            h1{
+                padding: 20px; 
+                margin: 0;
+            }
+        }
+
+        form{
+            padding-top: 50px;
+            padding-bottom: 0;
+
+            div.error-message{
+                background-color: red;
+                color: $white;
+                margin: 0 40px;
+            }
+
+            div#username-input{
+
+                input{
+                    width: 80%;
+                    display: inline-block;
+                    height: 3em;
+                    margin: 0;
+                    padding: 10px;
+                    border: 1px solid $colour2;
+                    background-color: transparent;
+                    
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+
+            div#password-input{
+
+                input{
+                    width: 80%;
+                    display: inline-block;
+                    height: 3em;
+                    margin: 20px 0;
+                    padding: 10px;
+                    border: 1px solid $colour2;
+                    background-color: transparent;
+                    
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+
+            div#admin-login-submit{
+                
+                input{
+                    width: 50%;
+                    display: inline-block;
+                    height: 3em;
+                    margin: 30px 0;
+                    padding: 10px;
+                    border: 1px solid $colour2;
+                    background-color: transparent;
+                    color: $colour2;
+                    cursor: pointer;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+
+            div#admin-signup-submit{
+                
+                input{
+                    width: 50%;
+                    display: inline-block;
+                    height: 3em;
+                    margin: 30px 0;
+                    padding: 10px;
+                    border: 1px solid $colour2;
+                    background-color: transparent;
+                    color: $colour2;
+                    cursor: pointer;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+        }
+        a{
+            p#signup-link{
+                color: $colour3;
+            }
+        }
+    }
+}

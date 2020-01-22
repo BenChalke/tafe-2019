@@ -1,0 +1,122 @@
+div#shopping-cart{
+    margin-bottom: 50px;
+    margin-top: 10px;
+
+    div#cart-title {
+        text-align: center;
+
+        h1{
+            color: $colour1;
+            font-size: 4rem;
+            font-weight: 400;
+            padding: 10px 50px;
+            display: inline-block;
+            margin: 20px;
+
+            @media screen and (max-width: 365px){
+                font-size: 3rem;
+            }
+        }
+    }
+
+    div#shopping-cart-inner{
+
+        div#shopping-cart-items{
+            background-color: $colour2;
+            flex: 1 1 600px;
+            color: $white;
+
+            .product-info{
+                background-color: $white;
+                color: $black;
+                margin: 5px;
+                padding: 10px;
+                align-items: center;
+
+                div#item-img{
+                    flex: 1 1 70px;
+
+                    img{
+                        display: inline-block;
+                        max-width: 50px;
+                    }
+                }
+
+                div#item-name-div{
+                    flex: 1 1 70px;
+                }
+
+                div#sale-prices{
+                    flex: 1 1 70px;
+                    text-align: right;
+                }
+
+                form#change-quantity-form{
+                    flex: 1 1 50px;
+                    text-align: right;
+
+                    input{
+                        display: inline-block;
+                        width: 40px;
+                    }
+
+                    button{
+                        display: inline-block;
+                    }
+                }
+
+                form#remove-item-form{
+                    flex: 0 1 50px;
+                    text-align: right;
+
+                    button{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+
+        div#shopping-cart-summary{
+            flex: 1 1 200px;
+            text-align: center;
+            border: 5px solid $colour2;
+            padding: 10px;
+            margin: 0 10px;
+            height: 600px;
+
+            h3{
+                font-size: 2em;
+                margin-top: 0;
+            }
+
+            p#cart-total{
+                position: absolute;
+                bottom: 150px;
+                left: 0;
+                right: 0;
+                text-align: center;
+
+                span#total-price{
+                    font-size: 2em;
+                    color: $colour1;
+                }
+            }
+
+            a{
+                margin: 0;
+                padding: 0;
+
+                p#checkout-btn{
+                    border: 3px solid $colour1;
+                    border-radius: 5px;
+                    padding: 20px;
+                    color: $colour1;
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    left: 20px;
+                }
+            }
+        } 
+    }
+}
