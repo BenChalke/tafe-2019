@@ -1,0 +1,28 @@
+/**** Colours ****/
+$colour1: red; //Blue
+$colour2:red; //Dark Blue
+$colour3: red; //Orange
+
+$white: #ffffff; //white
+$black: #000000; //black
+
+$facebook-colour: blue;
+
+/**** Included Files ****/
+
+//Main
+@import 'main/generics';
+@import 'main/header';
+@import 'main/footer';
+
+//Pages
+@import 'pages/homepage';
+@import 'pages/contact-us';
+@import 'pages/thank-you';
+@import 'pages/about';
+@import 'pages/products';
+@import 'pages/login';
+@import 'pages/shopping-cart';
+@import 'pages/checkout';
+@import 'pages/admin';
+@import 'pages/modify-item';

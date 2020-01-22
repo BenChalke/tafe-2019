@@ -1,0 +1,87 @@
+div#checkout-page{
+
+    div#checkout-title{
+        text-align: center;
+
+        h1{
+            color: $colour1;
+            font-size: 4rem;
+            font-weight: 400;
+            padding: 10px 50px;
+            display: inline-block;
+            margin: 20px;
+
+            @media screen and (max-width: 365px){
+                font-size: 3rem;
+            }
+        }
+    }
+
+    div#checkout-page-inner{
+        margin-bottom: 50px;
+
+        form{
+            align-content: stretch;
+
+            div#payment-address{
+                flex: 1 1 400px;
+                padding: 20px;
+
+                h3{
+                    text-align: center;
+                    flex: 1 1 100%;
+                }
+                
+                label{
+                    width: 100%;
+                    margin: 10px 0;
+                }
+
+                input{
+                    width: 100%;
+                }
+
+            }
+
+            div#payment-card{
+                flex: 1 1 400px;
+                padding: 20px;
+
+                h3{
+                    text-align: center;
+                }
+                
+                label{
+                    width: 100%;
+                    margin: 10px 0;
+                }
+
+                input{
+                    width: 100%;
+                }
+            }
+
+            div#checkout-error-message{
+                flex: 1 1 100%;
+                margin: 0 auto;
+                text-align: center;
+                
+                p {
+                    padding: 10px 0;
+                    background-color: red;
+                    color: $white;
+                }
+            }
+
+            div#checkout-btn-div{
+                flex: 1 1 100%;
+                text-align: center;
+                margin: 0 auto;
+
+                input#checkout-btn{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}

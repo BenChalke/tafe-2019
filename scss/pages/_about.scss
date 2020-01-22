@@ -1,0 +1,24 @@
+div#about-page{
+
+    div#about-title {
+        text-align: center;
+
+        h1{
+            color: $colour2;
+            font-size: 4rem;
+            font-weight: 400;
+            padding: 10px 50px;
+            display: inline-block;
+            margin: 20px;
+
+            @media screen and (max-width: 365px){
+                font-size: 3rem;
+            }
+
+        }
+    }
+
+    div#about-content{
+        padding: 50px 40px 100px 40px;
+    }
+}
