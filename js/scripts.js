@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
     $('.home-slider').bxSlider({
         mode: 'horizontal',
         auto: true,
@@ -27,7 +27,7 @@ function confirmDelete() {
         return true;
     }
     else {
-        // element.attachEvent('onsubmit', function(e){
+        // element.attachEvent('onsubmit', function(e) {
         //     e.preventDefault();
         // });
 

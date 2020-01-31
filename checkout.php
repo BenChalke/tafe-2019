@@ -54,7 +54,7 @@ if(isset($_POST['checkout-form'])) {
     // print('<br><br><br>');
 
     //loop through shopping cart, insert items
-    foreach ($items as $item){
+    foreach ($items as $item) {
         //set up insert statement
         // echo 'adding';
         $array = ((array) $item);

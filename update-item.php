@@ -155,7 +155,7 @@ if(isset($_POST['update-item'])):
                 $categoryId = $catRow["category-id"];
                 $categoryName = $catRow["category-name"];
                 
-                if($categoryId === $row[0]['category-id']){
+                if($categoryId === $row[0]['category-id']) {
                 ?>
                     <option selected='selected' value="<?= $categoryId ?>"><?= $categoryName ?></option>
                 <?php

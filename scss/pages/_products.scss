@@ -11,7 +11,7 @@ div#products-page{
             display: inline-block;
             margin: 20px;
 
-            @media screen and (max-width: 365px){
+            @media screen and (max-width: 365px) {
                 font-size: 3rem;
             }
 
@@ -42,7 +42,7 @@ div#products-page{
                 margin: 20px;
                 text-transform: capitalize;
     
-                @media screen and (max-width: 365px){
+                @media screen and (max-width: 365px) {
                     font-size: 3rem;
                 }
     

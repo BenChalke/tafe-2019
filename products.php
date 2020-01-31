@@ -11,7 +11,7 @@ if(isset($_POST['add-to-cart'])) {
     
     $item = new CartItem($product->getProductName(), $_POST['quantity'], $product->getPrice(), $product->getProductID());
 
-    if(!isset($_SESSION['cart'])){
+    if(!isset($_SESSION['cart'])) {
         $cart = new ShoppingCart();
     } else {
         $cart = $_SESSION['cart'];
@@ -100,7 +100,7 @@ if(isset($_GET['product'])) {
                     $stmt = $db->connect()->prepare($sql);
                     $rows = $db->executeSQL($stmt);
                     //Write a foreach statement to display results of the SQL statement
-                    if(!isset($_GET['category']) && !isset($_GET['search'])){
+                    if(!isset($_GET['category']) && !isset($_GET['search'])) {
                         $allActive = 'activeCategory';
                         $saleActive = '';
                     } else if(isset($_GET['category']) && $_GET['category'] === 'sale') {   
@@ -116,7 +116,7 @@ if(isset($_GET['product'])) {
 
                     foreach ($rows as $row)
                     {
-                        if(isset($_GET['category']) && $_GET['category'] === $row['category-name']){
+                        if(isset($_GET['category']) && $_GET['category'] === $row['category-name']) {
                             $activeClass = 'activeCategory';
                         } else {
                             $activeClass = '';
@@ -130,15 +130,15 @@ if(isset($_GET['product'])) {
         
         <div id='products-display-inner' class="flexbox">
             <?php
-                if(isset($_GET['category']) && $_GET['category'] !== 'sale'){
+                if(isset($_GET['category']) && $_GET['category'] !== 'sale') {
                     $category = $_GET["category"];
                     $sql = "SELECT * from `item`, `category` WHERE `category`.`category-id` = `item`.`category-id` AND `category-name` = :id";
                     $rows = $db->executeSQLMultiValueWithParams($sql, $category, ":id");
-                } else if(isset($_GET['category']) && $_GET['category'] === 'sale'){
+                } else if(isset($_GET['category']) && $_GET['category'] === 'sale') {
                     $sql = "SELECT * FROM `item` WHERE `price` <> `sale-price`";
                     $stmt = $db->connect()->prepare($sql);
                     $rows = $db->executeSQL($stmt);
-                } else if(isset($_GET['search'])){
+                } else if(isset($_GET['search'])) {
                     $search = $_GET["search"];
                     $sql = "SELECT * from `item` WHERE `item-name` LIKE '%" . $search ."%'";
                     $rows = $db->executeSQLMultiValueWithParams($sql, $search, ":id");
@@ -148,7 +148,7 @@ if(isset($_GET['product'])) {
                     $rows = $db->executeSQL($stmt);
                 }
 
-                if(empty($rows)){
+                if(empty($rows)) {
                     print("<p id='no-products'>Sorry, there are no products to show.</p>");
                 }
 
