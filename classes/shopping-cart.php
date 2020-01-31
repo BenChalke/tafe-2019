@@ -95,7 +95,7 @@ class ShoppingCart {
     //     $result = $pdo->lastInsertId();
 
     //     //loop through shopping cart, insert items
-    //     foreach ($this->_cartItems as $item){
+    //     foreach ($this->_cartItems as $item) {
     //         //set up insert statement
     //         echo 'adding';
     //         print_r($item);

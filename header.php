@@ -2,7 +2,7 @@
 
 require_once 'settings/init.php';
 
-if(isset($_POST['theme-form'])){
+if(isset($_POST['theme-form'])) {
     $_SESSION['theme'] = $_POST['theme'];
 }
 

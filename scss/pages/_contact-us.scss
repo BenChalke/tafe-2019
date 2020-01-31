@@ -11,7 +11,7 @@ div#contact-page{
              display: inline-block;
              margin: 20px;
 
-             @media screen and (max-width: 365px){
+             @media screen and (max-width: 365px) {
                  font-size: 3rem;
              }
 
@@ -22,14 +22,14 @@ div#contact-page{
         padding: 40px 20px;
         align-items: stretch;
 
-        @media screen and (max-width: 450px){
+        @media screen and (max-width: 450px) {
             padding: 0;
         }
 
         .contact-page-item{
             @include flex(1 1 400px);
 
-            @media screen and (max-width: 853px){
+            @media screen and (max-width: 853px) {
                 @include flex(1 1 500px);
 
             }
@@ -39,7 +39,7 @@ div#contact-page{
             text-align: center;
             padding: 0 20px;
 
-            @media screen and (max-width: 853px){
+            @media screen and (max-width: 853px) {
                 padding-top: 30px;
             }
 
@@ -72,7 +72,7 @@ div#contact-page{
             color: black;
             border-right: 2px solid $colour1;
 
-            @media screen and (max-width: 853px){
+            @media screen and (max-width: 853px) {
                 border-right: none;
 
             }
@@ -158,7 +158,7 @@ div#contact-page{
                     font-weight: bold;
                     max-width: 200px;
 
-                    @media screen and(max-width: 958px){
+                    @media screen and(max-width: 958px) {
                         width: 100%;
                         max-width: none;
                     }
